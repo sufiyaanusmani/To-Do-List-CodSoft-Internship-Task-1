@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
+body {
+
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+
+
+}
+
+.btn {
+    height: 40px;
+    border-radius: 12px;
+
+}
+
+.new {
+    font-size: 12px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.15) 3.95px 3.95px 4.6px;
+    padding: 20px;
+    border: none;
+
+
+}
+
+
+.active {
+
+    background: #f6f7fb !important;
+    border-color: #f6f7fb !important;
+    color: #000 !important;
+    font-size: 12px;
+
+}
+
+.inputs {
+
+    position: relative;
+
+}
+
+.form-control {
+    text-indent: 15px;
+    border: none;
+    height: 45px;
+    border-radius: 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #eee;
+    outline: 0;
+    box-shadow: none;
+    border-bottom: 1px solid blue;
+}
+
+
+.form-control:focus {
+    color: blue;
+}
+
+.inputs i {
+
+    position: absolute;
+    top: 14px;
+    left: 4px;
+    color: #b8b9bc;
+}
+
+.star {
+
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    margin-right: 10px;
+    border-radius: 5px;
+
+}
+
+.time-text {
+
+    font-size: 15px;
+    color: #989898;
+}
+
+.content-text-1 {
+
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #09bd02;
+    color: #ffffff;
+    font-weight: 700;
+
+}
+
+.content-text-1:hover {
+    background-color: rgb(12, 110, 3);
+}
+
+.content-text-2 {
+
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #8f8e8a;
+    color: #ffffff;
+    font-weight: 700;
+
+}
+
+.content-text-2:hover {
+    background-color: rgb(73, 68, 68);
+}
+
+.new-task {
+    margin-top: 10px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.edit-task {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.task {
+    margin-top: 6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 12px;
+}
+
+.task:hover {
+    background-color: #e4e3e2;
+}
+
+.title {
+    margin-top: 8px;
+    font-weight: bold;
+}

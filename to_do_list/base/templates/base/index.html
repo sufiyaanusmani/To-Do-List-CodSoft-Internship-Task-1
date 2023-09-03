@@ -1,0 +1,52 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+    <div class="container">
+        
+        <div class="h1 mt-3" style='text-align:center;'>
+            To-Do List
+        </div>
+        <div class="row d-flex justify-content-center mt-4">
+
+            <div class="col-md-8">
+
+                <div class="card">
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <span class="font-weight-bold">{{ today }} <b>{{ day }}</b></span>
+
+
+                    </div>
+                    <form action="/" method="POST">
+                        {% csrf_token %}
+                        <input type="text" class="new-task" name='new_task' placeholder="Add New Task">
+                        <button class="btn btn-primary new"><i class="fa fa-plus"></i> Add</button>
+                    </form>
+
+                    <hr>
+
+                    {% for task in tasks %}
+                    <div class="task">
+                        <div class="row">
+                            <div class="col-md-6 title">{{ task.title }}</div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-1"><a href="{% url 'edit-task' task.id %}"><span class="content-text-2"><i class="fa fa-pencil"></i></span></a></div>
+                            <div class="col-md-1"><a href="{% url 'delete-task' task.id %}"><span class="content-text-1"><i class="fa fa-check"></i></span></a></div>
+
+                        </div>
+                    </div>
+                    {% endfor %}
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    {% endblock content %}
